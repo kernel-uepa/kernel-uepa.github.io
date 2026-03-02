@@ -73,9 +73,16 @@ const HeroSection = () => {
         ))}
       </motion.div>
 
-      <a href="#about" className="absolute bottom-10 animate-bounce text-muted-foreground transition-colors hover:text-foreground">
+      <button
+        onClick={() => {
+          const el = document.getElementById("about");
+          if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }}
+        className="absolute bottom-10 animate-bounce text-muted-foreground transition-colors hover:text-foreground cursor-pointer"
+        aria-label="Scroll to about section"
+      >
         <ChevronDown className="h-6 w-6" />
-      </a>
+      </button>
     </section>
   );
 };
