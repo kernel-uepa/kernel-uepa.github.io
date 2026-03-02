@@ -1,5 +1,5 @@
 import { community } from "@/config/community";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useI18n } from "@/i18n/I18nContext";
 import { localeLabels, type Locale } from "@/i18n/translations";
 import { Globe, Menu, X } from "lucide-react";
@@ -15,12 +15,29 @@ const sectionKeys = [
   { id: "join", key: "nav.join", highlight: true },
 ] as const;
 
+/** Scroll to a section by id without touching the URL hash. */
+const scrollToSection = (id: string) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
+
 const Navbar = () => {
   const { t, locale, setLocale } = useI18n();
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState("");
   const [langOpen, setLangOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const handleSectionClick = useCallback(
+    (e: React.MouseEvent, id: string) => {
+      e.preventDefault();
+      scrollToSection(id);
+      setMobileOpen(false);
+    },
+    [],
+  );
 
   useEffect(() => {
     const onScroll = () => {
@@ -52,7 +69,7 @@ const Navbar = () => {
         }`}
       >
         <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <a href="#" className="flex items-center gap-2">
+          <a href="#" className="flex items-center gap-2" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
             {community.logoIsImage ? (
               <img src={community.logo} alt={community.name} className="h-8 w-8 object-contain" />
             ) : (
@@ -68,6 +85,7 @@ const Navbar = () => {
                 <a
                   key={id}
                   href={`#${id}`}
+                  onClick={(e) => handleSectionClick(e, id)}
                   className={`text-xs uppercase tracking-widest transition-colors duration-200 ${
                     isHighlight
                       ? "rounded-full border border-border px-3 py-1.5 hover:border-foreground/30 " +
@@ -157,7 +175,7 @@ const Navbar = () => {
                   <a
                     key={id}
                     href={`#${id}`}
-                    onClick={() => setMobileOpen(false)}
+                    onClick={(e) => handleSectionClick(e, id)}
                     className={`text-sm uppercase tracking-widest transition-colors ${
                       active === id ? "text-foreground" : "text-muted-foreground hover:text-foreground"
                     }`}
