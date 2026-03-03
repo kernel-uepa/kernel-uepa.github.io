@@ -8,7 +8,7 @@ import { useState, useEffect, useCallback, useRef } from "react";
 
 const WorkSection = () => {
   const { t, locale } = useI18n();
-  const { items: projects } = community.projects;
+  const projects = community.projects;
   const configEvents = community.events;
   const events = translations[locale].events.items as readonly { title: string; date: string; description: string }[];
 
@@ -17,7 +17,11 @@ const WorkSection = () => {
   const [paused, setPaused] = useState(false);
   const pauseTimeout = useRef<ReturnType<typeof setTimeout>>();
 
-  const total = configEvents.length;
+  const total: number = configEvents.length;
+
+  if (total === 0) {
+    return null;
+  }
 
   const goTo = useCallback((index: number, dir: number) => {
     setDirection(dir);
