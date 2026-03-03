@@ -10,22 +10,24 @@ export const en = {
     join: "Join",
   },
   hero: {
+    tagline: "We learn, we teach, we build.",
     taglines: [
-      "Building the future, one project at a time.",
-      "We learn, we teach, we make.",
-      "Open source. No gatekeeping. No discrimination.",
+      "We learn, we teach, we build.",
       "Free knowledge for everyone.",
+      "Freedom to build with and for everyone.",
+      "Facilitating access to cutting-edge tech.",
     ],
   },
   whoWeAre: {
     title: "Who We Are",
     description:
-      "We are an informal community led by students of <hl>UEPA</hl> who believe in one truth: spreading <hl>free knowledge</hl> to everyone, without discrimination. Our focus is on <hl>execution</hl>, <hl>hard skills</hl>, and career growth.",
+      "We are an independent community led by <hl>UEPA</hl> students spreading <hl>free knowledge</hl> to everyone. We facilitate access to <hl>cutting-edge tech</hl> and empower freedom to build projects <hl>with and for everyone</hl>. Always open to partnerships.",
+    highlights: ["open source", "web development", "software architecture", "infrastructure", "DevOps", "AI"],
   },
   mission: {
     title: "Our Mission",
     statement:
-      "To democratize access to cutting-edge technology, breaking the barriers between classroom theory and real-world practice — connecting students from Pará to the world's biggest tech programs.",
+      "Spread free knowledge and facilitate access to cutting-edge tech — breaking barriers between theory and practice, connecting students from Pará to global tech programs, and empowering everyone to build the future.",
     readMore: "Read our full manifesto",
   },
   members: {
@@ -39,6 +41,9 @@ export const en = {
   },
   work: {
     title: "Our Work",
+  },
+  projects: {
+    title: "Our Projects",
   },
   events: {
     title: "Our Events",
@@ -108,7 +113,12 @@ export const en = {
       {
         question: "Are there any fees or costs?",
         answer:
-          "KERNEL is completely free to join. We're a student community funded by the university and occasional sponsorships.",
+          "KERNEL is completely free to join. We're a student community that seeks partnerships to bring more value to our members.",
+      },
+      {
+        question: "Are you open to partnerships?",
+        answer:
+          "Always! We're open to partnerships with companies, tech communities, student programs, and any initiative that brings value to our members. Get in touch!",
       },
       {
         question: "How do I get involved in a project?",
@@ -219,11 +229,11 @@ export const en = {
     title: "Our Manifesto",
     subtitle: "What we believe in.",
     paragraphs: [
-      "KERNEL is an informal community led by students of the Universidade do Estado do Pará (UEPA) who believe in one truth: We will spread knowledge freely to everyone, without discrimination.",
-      "Our goal is to democratize access to cutting-edge technology, breaking the barriers between classroom theory and what the job market actually demands. We are not here to be tied down by institutional bureaucracy or endless political disputes. We are an agile, direct core — focused 100% on execution, hard skills, and career growth.",
-      "We believe knowledge must not remain in the hands of a few, but shared across networks. We want to build a safe, practical, and collaborative space where any student can master software development, infrastructure, and open source culture.",
-      "Our focus is to connect our community to the biggest global tech student programs and to strengthen our ties with the developer ecosystem in our region. We will transform the technical reality of our members and permanently put our state on the innovation map.",
-      "At KERNEL, the methodology is simple and direct: we learn, we teach, and we make. If you have a thirst for code, a desire to get your hands dirty, want to grow technically, and strengthen our community — your place is here, running with us.",
+      "KERNEL is an independent community led by students of the Universidade do Estado do Pará (UEPA) who believe in one truth: knowledge should be free and accessible to everyone, without discrimination.",
+      "Our mission is to facilitate access to cutting-edge technology, breaking the barriers between classroom theory and what the market actually demands. We give total freedom to build projects — with the community, for the community, or for whoever you want. No bureaucracy, no gatekeeping.",
+      "We believe knowledge must not remain in the hands of a few, but shared across networks. We want to build a safe, practical, and collaborative space where any student can master software development, infrastructure, DevOps, and open source culture.",
+      "Our focus is to connect our community to the biggest global tech student programs and to strengthen our ties with the developer ecosystem in our region. We are always open to partnerships that bring value to our community. We will transform the technical reality of our members and permanently put Pará on the innovation map.",
+      "At KERNEL, the methodology is simple and direct: we learn, we teach, and we build. If you want access to cutting-edge tech, freedom to create your projects, and be part of a community that truly shares knowledge — your place is here.",
       "We are the base. We are the core. We are KERNEL.",
     ],
   },

@@ -1,62 +1,47 @@
 // ============================================================
-// COMMUNITY CONFIG — Swap this file to rebrand for any community
+// COMMUNITY CONFIG — Language-neutral data only
+// All titles, descriptions, and labels are in src/i18n/*.ts
 // ============================================================
 
 export const community = {
   name: "KERNEL",
-  tagline: "A gente aprende, ensina e cria.",
   logo: "/kernel-logo.png",
   logoIsImage: true,
   accentColor: "0 0% 100%",
   accentColorHex: "#ffffff",
 
   socials: {
-    instagram: "https://instagram.com/kernel",
-    linkedin: "https://linkedin.com/company/kernel",
+    instagram: "https://instagram.com/kernel.uepa",
+    linkedin: "https://linkedin.com/company/kernel-uepa",
     x: "https://x.com/kernel",
     discord: "https://discord.gg/kernel",
-    youtube: "https://youtube.com/@kernel",
-    github: "https://github.com/kernel",
-  },
-
-  whoWeAre: {
-    title: "Who We Are",
-    description:
-      "We are a student-led tech community passionate about open source, web development, AI, and everything in between. We believe in learning by doing — shipping real projects, mentoring each other, and pushing boundaries together.",
-    highlights: ["open source", "web development", "AI", "learning by doing"],
-  },
-
-  mission: {
-    title: "Our Mission",
-    statement:
-      "To empower every student with the tools, knowledge, and community to turn ideas into impactful technology — regardless of background or experience level.",
+    youtube: "https://youtube.com/@kernel-uepa",
+    github: "https://github.com/kernel-uepa",
   },
 
   members: {
-    title: "Our Members",
     stats: [
-      { label: "Active Members", value: "120+" },
-      { label: "Projects Shipped", value: "35" },
-      { label: "Events Held", value: "50+" },
-      { label: "Workshops", value: "80+" },
+      { value: "60" },
+      { value: "1" },
+      { value: "1" },
+      { value: "2" },
     ],
     leadership: [
-      { name: "Alex Chen", role: "President", photo: "https://i.pravatar.cc/300?img=11", socials: { linkedin: "#", github: "#" } },
-      { name: "Priya Sharma", role: "VP of Engineering", photo: "https://i.pravatar.cc/300?img=5", socials: { linkedin: "#", github: "#" } },
-      { name: "Jordan Lee", role: "Design Lead", photo: "https://i.pravatar.cc/300?img=12", socials: { linkedin: "#", github: "#" } },
-      { name: "Sam Rivera", role: "Community Manager", photo: "https://i.pravatar.cc/300?img=32", socials: { linkedin: "#", github: "#" } },
+      { name: "Jorge Hermes", role: "President", photo: "https://i.pravatar.cc/300?img=11", socials: { linkedin: "#", github: "#" } },
+      { name: "João Victor", role: "Design and Branding Lead", photo: "https://i.pravatar.cc/300?img=12", socials: { linkedin: "#", github: "#" } },
+      { name: "Thaylan Fonseca", role: "Events and Workshops Lead", photo: "https://i.pravatar.cc/300?img=5", socials: { linkedin: "#", github: "#" } },
+      { name: "Ryan Ricardo", role: "Partnership Lead", photo: "https://i.pravatar.cc/300?img=32", socials: { linkedin: "#", github: "#" } },
+      { name: "Ryan Santana", role: "Community Manager", photo: "https://i.pravatar.cc/300?img=13", socials: { linkedin: "#", github: "#" } },
+      { name: "Luis Felipe", role: "Tech Lead", photo: "https://i.pravatar.cc/300?img=14", socials: { linkedin: "#", github: "#" } },
     ],
   },
 
-  projects: {
-    title: "Our Projects",
-    items: [
-      { title: "CampusConnect", description: "A platform connecting students with campus events and clubs in real-time.", tags: ["React", "Node.js", "PostgreSQL"], link: "#" },
-      { title: "StudyBuddy AI", description: "An AI-powered study companion that generates quizzes from your notes.", tags: ["Python", "OpenAI", "FastAPI"], link: "#" },
-      { title: "OpenLab", description: "Open-source toolkit for university lab equipment management.", tags: ["TypeScript", "Supabase", "IoT"], link: "#" },
-      { title: "DevPortfolio", description: "A one-click portfolio generator for student developers.", tags: ["Next.js", "Tailwind", "Vercel"], link: "#" },
-    ],
-  },
+  projects: [
+    { title: "CampusConnect", description: "A platform connecting students with campus events and clubs in real-time.", tags: ["React", "Node.js", "PostgreSQL"], link: "#" },
+    { title: "StudyBuddy AI", description: "An AI-powered study companion that generates quizzes from your notes.", tags: ["Python", "OpenAI", "FastAPI"], link: "#" },
+    { title: "OpenLab", description: "Open-source toolkit for university lab equipment management.", tags: ["TypeScript", "Supabase", "IoT"], link: "#" },
+    { title: "DevPortfolio", description: "A one-click portfolio generator for student developers.", tags: ["Next.js", "Tailwind", "Vercel"], link: "#" },
+  ],
 
   events: [
     { image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" },
@@ -72,24 +57,13 @@ export const community = {
     { image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/GitLab_logo.svg/320px-GitLab_logo.svg.png", link: "https://gitlab.com" },
   ],
 
-  joinUs: {
-    title: "How to Join Us",
-    ctaText: "Join Our Discord",
-    ctaLink: "https://discord.gg/kernel",
-  },
-
   location: {
-    title: "Our Location",
     venue: "UEPA — Campus XXII Ananindeua",
     address: "MH4R+7Q, Avenida Independência, S/N",
     city: "Ananindeua, Pará — Brasil",
   },
 
   trello: {
-    boardId: "JaLUjzT1", // Set your public Trello board short ID here, e.g. "aBcDeFgH"
-  },
-
-  footer: {
-    copyright: `© ${new Date().getFullYear()} KERNEL. All rights reserved.`,
+    boardId: "JaLUjzT1",
   },
 } as const;

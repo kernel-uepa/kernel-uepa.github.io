@@ -10,22 +10,24 @@ export const pt = {
     join: "Participe",
   },
   hero: {
+    tagline: "A gente aprende, ensina e constrói.",
     taglines: [
-      "Construindo o futuro, um projeto de cada vez.",
-      "A gente aprende, ensina e cria.",
-      "Open source. Sem discriminação. Sem gatekeeping.",
-      "Conhecimento de graça para todxs.",
+      "A gente aprende, ensina e constrói.",
+      "Conhecimento gratuito para todxs.",
+      "Liberdade para construir com e para todo mundo.",
+      "Facilitando o acesso à tecnologia de ponta.",
     ],
   },
   whoWeAre: {
     title: "Quem Somos",
     description:
-      "Somos uma comunidade informal liderada por estudantes da <hl>UEPA</hl> que acreditam numa verdade: espalharemos <hl>conhecimento de graça</hl> para todxs, sem discriminação. Nosso foco é <hl>execução</hl>, <hl>hard skills</hl> e alavancagem de carreira.",
+      "Somos uma comunidade independente liderada por estudantes da <hl>UEPA</hl> que espalha <hl>conhecimento gratuito</hl> para todxs. Facilitamos o acesso à <hl>tecnologia de ponta</hl> e damos liberdade para construir projetos <hl>com e para todo mundo</hl>. Sempre abertos a parcerias.",
+    highlights: ["open source", "desenvolvimento web", "arquitetura de software", "infraestrutura", "DevOps", "IA"],
   },
   mission: {
     title: "Nossa Missão",
     statement:
-      "Democratizar o acesso à tecnologia de ponta, quebrando as barreiras entre a teoria da sala de aula e a prática que o mercado realmente exige — conectando estudantes do Pará aos maiores programas globais de tecnologia.",
+      "Espalhar conhecimento gratuito e facilitar o acesso à tecnologia de ponta — quebrando barreiras entre teoria e prática, conectando estudantes do Pará aos maiores programas globais de tech e empoderando todxs a construir o futuro.",
     readMore: "Leia nosso manifesto completo",
   },
   members: {
@@ -39,6 +41,9 @@ export const pt = {
   },
   work: {
     title: "Nosso Trabalho",
+  },
+  projects: {
+    title: "Nossos Projetos",
   },
   events: {
     title: "Nossos Eventos",
@@ -96,7 +101,7 @@ export const pt = {
       {
         question: "Preciso ter experiência com programação para participar?",
         answer:
-          "De jeito nenhum! Aceitamos membros de todos os níveis. Seja você iniciante escrevendo sua primeira linha de código ou um desenvolvedor experiente, há um lugar para você no KERNEL.",
+          "De jeito nenhum! Aceitamos membros de todos os níveis. Seja você iniciante escrevendo sua primeira linha de código ou um desenvolvedor experiente, há um lugar para você na KERNEL.",
       },
       {
         question: "Quanto tempo preciso dedicar?",
@@ -111,7 +116,12 @@ export const pt = {
       {
         question: "Existe alguma taxa ou custo?",
         answer:
-          "O KERNEL é completamente gratuito. Somos uma comunidade estudantil financiada pela universidade e eventuais patrocínios.",
+          "A KERNEL é completamente gratuita. Somos uma comunidade estudantil que busca parcerias para trazer mais valor aos nossos membros.",
+      },
+      {
+        question: "Vocês estão abertos a parcerias?",
+        answer:
+          "Sempre! Estamos abertos a parcerias com empresas, comunidades tech, programas estudantis e qualquer iniciativa que traga valor para nossos membros. Entre em contato conosco!",
       },
       {
         question: "Como posso me envolver em um projeto?",
@@ -176,7 +186,7 @@ export const pt = {
       {
         title: "3. Propriedade Intelectual",
         content:
-          "Projetos criados dentro do KERNEL estão sujeitos às licenças escolhidas por suas respectivas equipes. A marca, logotipos e conteúdo original da comunidade são propriedade do KERNEL.",
+          "Projetos criados dentro da KERNEL estão sujeitos às licenças escolhidas por suas respectivas equipes. A marca, logotipos e conteúdo original da comunidade são propriedade da KERNEL.",
       },
       {
         title: "4. Privacidade",
@@ -186,7 +196,7 @@ export const pt = {
       {
         title: "5. Modificações",
         content:
-          "O KERNEL reserva-se o direito de modificar estes termos a qualquer momento. O uso contínuo da plataforma após alterações constitui aceitação dos termos atualizados.",
+          "A KERNEL reserva-se o direito de modificar estes termos a qualquer momento. O uso contínuo da plataforma após alterações constitui aceitação dos termos atualizados.",
       },
     ],
   },
@@ -226,7 +236,7 @@ export const pt = {
     title: "Nosso Manifesto",
     subtitle: "No que acreditamos.",
     paragraphs: [
-      "A Kernel é uma comunidade informal liderada por estudantes da Universidade do Estado do Pará que acreditam numa verdade: Espalharemos conhecimento de graça para todxs, sem discriminação.",
+      "A Kernel é uma comunidade independente liderada por estudantes da Universidade do Estado do Pará que acreditam numa verdade: Espalharemos conhecimento de graça para todxs, sem discriminação.",
       "Nosso objetivo é democratizar o acesso à tecnologia de ponta, quebrando as barreiras entre a teoria da sala de aula e a prática que o mercado de trabalho realmente exige. Não estamos aqui para nos prender a burocracias institucionais ou disputas políticas intermináveis. Somos um núcleo ágil, direto e focado 100% em execução, hard skills e alavancagem de carreira.",
       "Acreditamos que o conhecimento não deve ficar retido nas mãos de poucos, mas sim compartilhado em rede. Queremos construir um espaço seguro, prático e colaborativo onde qualquer estudante possa dominar desenvolvimento de software, infraestrutura e cultura open source.",
       "Nosso foco é conectar nossa base aos maiores programas estudantis de gigantes globais de tecnologia e fortalecer nossos laços com o ecossistema de desenvolvedores da nossa região. Vamos transformar a realidade técnica dos nossos alunos e colocar o nosso estado de vez no mapa da inovação.",

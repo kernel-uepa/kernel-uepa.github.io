@@ -44,7 +44,7 @@ const MembersSection = () => {
         >
           {stats.map((stat, i) => (
             <AnimatedStat
-              key={stat.label}
+              key={statKeys[i]}
               value={stat.value}
               label={t(`members.stats.${statKeys[i]}`)}
               started={isVisible}

@@ -20,7 +20,7 @@ describe("community config", () => {
     expect(community.members.stats.length).toBeGreaterThan(0);
   });
 
-  it("joinUs ctaLink is a valid URL", () => {
-    expect(() => new URL(community.joinUs.ctaLink)).not.toThrow();
+  it("has a valid location venue", () => {
+    expect(community.location.venue).toBeTruthy();
   });
 });

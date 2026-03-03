@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const ProjectsSection = () => {
   const { t } = useI18n();
-  const { items } = community.projects;
+  const projects = community.projects;
 
   return (
     <section id="projects" className="px-6 py-24 md:py-32">
@@ -22,7 +22,7 @@ const ProjectsSection = () => {
         </motion.h2>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          {items.map((project, i) => (
+          {projects.map((project, i) => (
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 30 }}
