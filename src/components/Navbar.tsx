@@ -171,18 +171,28 @@ const Navbar = () => {
               </button>
 
               <div className="flex flex-col gap-4 flex-1">
-                {sectionKeys.map(({ id, key }) => (
-                  <a
-                    key={id}
-                    href={`#${id}`}
-                    onClick={(e) => handleSectionClick(e, id)}
-                    className={`text-sm uppercase tracking-widest transition-colors ${
-                      active === id ? "text-foreground" : "text-muted-foreground hover:text-foreground"
-                    }`}
-                  >
-                    {t(key)}
-                  </a>
-                ))}
+                {sectionKeys.map(({ id, key, ...rest }) => {
+                  const isHighlight = "highlight" in rest && rest.highlight;
+                  return (
+                    <a
+                      key={id}
+                      href={`#${id}`}
+                      onClick={(e) => handleSectionClick(e, id)}
+                      className={`text-sm uppercase tracking-widest transition-colors ${
+                        isHighlight
+                          ? "rounded-full border border-border px-4 py-2 text-center hover:border-foreground/30 " +
+                            (active === id
+                              ? "text-foreground border-foreground/30"
+                              : "text-muted-foreground hover:text-foreground")
+                          : active === id
+                            ? "text-foreground"
+                            : "text-muted-foreground hover:text-foreground"
+                      }`}
+                    >
+                      {t(key)}
+                    </a>
+                  );
+                })}
               </div>
 
               {/* Language selector in mobile */}
