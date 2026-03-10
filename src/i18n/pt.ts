@@ -44,6 +44,8 @@ export const pt = {
   },
   projects: {
     title: "Nossos Projetos",
+    stayTuned: "Stay tuned! 😉",
+    stayTunedSub: "Nossos projetos estão a caminho.",
   },
   events: {
     title: "Nossos Eventos",

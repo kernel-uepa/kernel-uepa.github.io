@@ -70,9 +70,9 @@ const WorkSection = () => {
           {t("work.title")}
         </motion.h2>
 
-        {/* Projects grid */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-16">
-          {projects.map((project, i) => (
+        {/* Projects — commented out until ready to announce */}
+        {/*
+          {community.projects.map((project, i) => (
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 30 }}
@@ -99,7 +99,42 @@ const WorkSection = () => {
               </div>
             </motion.div>
           ))}
+        */}
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-8">
+          {[0, 1, 2, 3].map((i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className="group relative flex flex-col rounded-xl border border-border bg-card p-6"
+            >
+              <div className="mb-3 flex items-start justify-between">
+                <div className="h-4 w-2/5 rounded bg-border/60" />
+                <div className="h-4 w-4 rounded bg-border/40" />
+              </div>
+              <div className="mb-2 h-3 w-full rounded bg-border/30" />
+              <div className="mb-4 h-3 w-4/5 rounded bg-border/30" />
+              <div className="flex gap-2">
+                <div className="h-5 w-14 rounded-full bg-border/40" />
+                <div className="h-5 w-14 rounded-full bg-border/40" />
+                <div className="h-5 w-14 rounded-full bg-border/40" />
+              </div>
+            </motion.div>
+          ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-16 flex flex-col items-center gap-1 text-center"
+        >
+          <p className="text-base font-semibold text-foreground">{t("projects.stayTuned")}</p>
+          <p className="text-sm text-muted-foreground">{t("projects.stayTunedSub")}</p>
+        </motion.div>
 
         {/* Events subtitle */}
         <motion.h3

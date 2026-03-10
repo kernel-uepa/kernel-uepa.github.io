@@ -55,6 +55,15 @@
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 
+  body::before {
+    display: none;
+  }
+
+  #root {
+    position: relative;
+    z-index: 1;
+  }
+
   html {
     scroll-behavior: smooth;
   }
@@ -77,4 +86,5 @@
     background-size: 256px 256px;
     z-index: 50;
   }
+
 }

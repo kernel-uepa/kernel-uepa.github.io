@@ -54,7 +54,7 @@ const MembersSection = () => {
 
         <div
           ref={ref2}
-          className={`grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 transition-all duration-700 ${
+          className={`flex flex-wrap justify-center gap-8 transition-all duration-700 ${
             isVisible2 ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
           }`}
         >
@@ -65,7 +65,7 @@ const MembersSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group flex flex-col items-center rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:border-foreground/20"
+              className="group flex w-56 flex-col items-center rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:border-foreground/20"
             >
               <img src={member.photo} alt={member.name} className="mb-4 h-24 w-24 rounded-full object-cover grayscale transition-all duration-300 group-hover:grayscale-0" />
               <h3 className="font-semibold text-foreground">{member.name}</h3>
