@@ -29,11 +29,57 @@ const ManifestoPage = () => {
             {page.title}
           </h1>
           <p className="mb-16 text-xl text-muted-foreground">{page.subtitle}</p>
-          <div className="space-y-6">
-            {page.paragraphs.map((p, i) => (
-              <p key={i} className="text-lg leading-relaxed text-muted-foreground">
-                {p}
-              </p>
+          <div className="space-y-12">
+            {page.sections.map((section, idx) => (
+              <section key={idx} className="space-y-6">
+                <h2 className="text-2xl font-bold tracking-tight text-foreground">
+                  {section.title}
+                </h2>
+
+                {section.paragraphs && (
+                  <div className="space-y-6">
+                    {section.paragraphs.map((p, i) => (
+                      <p key={i} className="text-lg leading-relaxed text-muted-foreground">
+                        {p}
+                      </p>
+                    ))}
+                  </div>
+                )}
+
+                {section.intro && (
+                  <p className="text-lg leading-relaxed text-muted-foreground">{section.intro}</p>
+                )}
+
+                {section.subsections && (
+                  <div className="space-y-8 ml-4 border-l-2 border-muted pl-6">
+                    {section.subsections.map((subsection, sidx) => (
+                      <div key={sidx} className="space-y-3">
+                        <h3 className="text-lg font-semibold text-foreground">
+                          {subsection.title}
+                        </h3>
+                        {subsection.content && (
+                          <p className="text-base leading-relaxed text-muted-foreground">
+                            {subsection.content}
+                          </p>
+                        )}
+                        {subsection.items && (
+                          <ul className="space-y-2">
+                            {subsection.items.map((item, iidx) => (
+                              <li
+                                key={iidx}
+                                className="text-base leading-relaxed text-muted-foreground flex gap-3"
+                              >
+                                <span className="text-muted-foreground mt-1">•</span>
+                                <span>{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </section>
             ))}
           </div>
         </article>

@@ -228,15 +228,69 @@ export const en = {
     ],
   },
   manifestoPage: {
-    title: "Our Manifesto",
+    title: "Our Manifesto & Code of Conduct",
     subtitle: "What we believe in.",
-    paragraphs: [
-      "KERNEL is an independent community led by students of the Universidade do Estado do Pará (UEPA) who believe in one truth: knowledge should be free and accessible to everyone, without discrimination.",
-      "Our mission is to facilitate access to cutting-edge technology, breaking the barriers between classroom theory and what the market actually demands. We give total freedom to build projects — with the community, for the community, or for whoever you want. No bureaucracy, no gatekeeping.",
-      "We believe knowledge must not remain in the hands of a few, but shared across networks. We want to build a safe, practical, and collaborative space where any student can master software development, infrastructure, DevOps, and open source culture.",
-      "Our focus is to connect our community to the biggest global tech student programs and to strengthen our ties with the developer ecosystem in our region. We are always open to partnerships that bring value to our community. We will transform the technical reality of our members and permanently put Pará on the innovation map.",
-      "At KERNEL, the methodology is simple and direct: we learn, we teach, and we build. If you want access to cutting-edge tech, freedom to create your projects, and be part of a community that truly shares knowledge — your place is here.",
-      "We are the base. We are the core. We are KERNEL.",
+    sections: [
+      {
+        title: "Our Manifesto",
+        paragraphs: [
+          "KERNEL is an independent community led by students of the Universidade do Estado do Pará (UEPA) who believe in one truth: knowledge should be free and accessible to everyone, without discrimination.",
+          "Our mission is to facilitate access to cutting-edge technology, breaking the barriers between classroom theory and what the market actually demands. We give total freedom to build projects — with the community, for the community, or for whoever you want. No bureaucracy, no gatekeeping.",
+          "We believe knowledge must not remain in the hands of a few, but shared across networks. We want to build a safe, practical, and collaborative space where any student can master software development, infrastructure, DevOps, and open source culture.",
+          "Our focus is to connect our community to the biggest global tech student programs and to strengthen our ties with the developer ecosystem in our region. We are always open to partnerships that bring value to our community. We will transform the technical reality of our members and permanently put Pará on the innovation map.",
+          "At KERNEL, the methodology is simple and direct: we learn, we teach, and we build. If you want access to cutting-edge tech, freedom to create your projects, and be part of a community that truly shares knowledge — your place is here.",
+          "We are the base. We are the core. We are KERNEL.",
+        ],
+      },
+      {
+        title: "Code of Conduct",
+        intro: "To fulfill our manifesto and ensure a truly safe, practical, and collaborative space, KERNEL enforces this Code of Conduct for all our physical events, online spaces (GitHub, WhatsApp), and community projects.",
+        subsections: [
+          {
+            title: "1. Expected Behavior",
+            content: "We expect all members, mentors, and partners to help create an intentionally inclusive environment:",
+            items: [
+              "Use welcoming and inclusive language: Respect pronouns and use collaborative, supportive phrasing.",
+              "Show empathy and kindness: Be respectful of differing viewpoints, hardware limitations, and varying levels of experience.",
+              "Foster learning, not ego: Aim to demystify complex topics rather than acting as a gatekeeper.",
+              "Design for the margins: Prioritize the safety and inclusion of marginalized and underrepresented groups in tech over the comfort of the status quo.",
+              "Focus on impact over intent: If you are told your words or actions caused harm, listen, apologize, and commit to doing better.",
+            ],
+          },
+          {
+            title: "2. Unacceptable Behavior",
+            content: "The following behaviors violate our core values and are strictly prohibited:",
+            items: [
+              "The use of sexualized language or imagery, and unwelcome sexual attention or advances.",
+              "Trolling, insulting or derogatory comments, and personal or political attacks (e.g., racist, sexist, ableist, or homophobic 'jokes').",
+              "Condescending language or behavior designed to make others feel inferior (e.g., unwarranted \"Well, actually...\" explanations).",
+              "Repeatedly interrupting or speaking over others, especially junior attendees or marginalized individuals.",
+              "Public or private harassment, doxing, or publishing others' private information without explicit permission.",
+              "Any other conduct which could reasonably be considered inappropriate in a professional, welcoming environment.",
+            ],
+          },
+          {
+            title: "3. How to Report",
+            content: "If you experience or witness unacceptable behavior, or have any other concerns, please report it immediately. You can do this by:",
+            items: [
+              "Contacting the KERNEL Core Team via email at kernel-uepa@gmail.com.",
+              "Directly privately messaging any Core Organizer on our official WhatsApp Community.",
+              "All complaints will be reviewed and investigated promptly and will be kept strictly confidential to protect the reporter.",
+            ],
+          },
+          {
+            title: "4. Enforcement and Consequences",
+            content: "The KERNEL Core Team is responsible for clarifying the standards of acceptable behavior and will take appropriate and fair corrective action in response to any instances of unacceptable behavior. If a community member engages in unacceptable behavior, the Core Team may take any action they deem appropriate, up to and including:",
+            items: [
+              "A private warning clarifying the impact of the behavior.",
+              "A requirement to issue a formal apology.",
+              "The deletion of inappropriate comments, code, or messages.",
+              "A temporary ban from KERNEL events (physical and digital).",
+              "A permanent expulsion from KERNEL, the WhatsApp Community, and the GitHub organization without warning.",
+            ],
+          },
+        ],
+      },
     ],
   },
   backToHome: "Back to home",

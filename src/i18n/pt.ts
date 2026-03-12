@@ -235,15 +235,69 @@ export const pt = {
     ],
   },
   manifestoPage: {
-    title: "Nosso Manifesto",
+    title: "Nosso Manifesto e Código de Conduta",
     subtitle: "No que acreditamos.",
-    paragraphs: [
-      "A Kernel é uma comunidade independente liderada por estudantes da Universidade do Estado do Pará que acreditam numa verdade: Espalharemos conhecimento de graça para todxs, sem discriminação.",
-      "Nosso objetivo é democratizar o acesso à tecnologia de ponta, quebrando as barreiras entre a teoria da sala de aula e a prática que o mercado de trabalho realmente exige. Não estamos aqui para nos prender a burocracias institucionais ou disputas políticas intermináveis. Somos um núcleo ágil, direto e focado 100% em execução, hard skills e alavancagem de carreira.",
-      "Acreditamos que o conhecimento não deve ficar retido nas mãos de poucos, mas sim compartilhado em rede. Queremos construir um espaço seguro, prático e colaborativo onde qualquer estudante possa dominar desenvolvimento de software, infraestrutura e cultura open source.",
-      "Nosso foco é conectar nossa base aos maiores programas estudantis de gigantes globais de tecnologia e fortalecer nossos laços com o ecossistema de desenvolvedores da nossa região. Vamos transformar a realidade técnica dos nossos alunos e colocar o nosso estado de vez no mapa da inovação.",
-      "Na Kernel, a metodologia é simples e direta: a gente aprende, a gente ensina e a gente cria. Se você tem sede de código, vontade de colocar a mão na massa, quer evoluir tecnicamente e fortalecer nossa comunidade, o seu lugar é aqui, rodando com a gente.",
-      "Somos a base. Somos o núcleo. Somos a Kernel.",
+    sections: [
+      {
+        title: "Nosso Manifesto",
+        paragraphs: [
+          "A KERNEL é uma comunidade independente liderada por estudantes da Universidade do Estado do Pará (UEPA) que acreditam em uma verdade: o conhecimento deve ser gratuito e acessível a todxs, sem discriminação.",
+          "Nossa missão é facilitar o acesso à tecnologia de ponta, quebrando as barreiras entre a teoria da sala de aula e o que o mercado realmente exige. Damos liberdade total para construir projetos — com a comunidade, para a comunidade, ou para quem você quiser. Sem burocracia, sem gatekeeping.",
+          "Acreditamos que o conhecimento não deve permanecer nas mãos de poucos, mas compartilhado em redes. Queremos construir um espaço seguro, prático e colaborativo onde qualquer estudante possa dominar desenvolvimento de software, infraestrutura, DevOps e cultura open source.",
+          "Nosso foco é conectar nossa comunidade aos maiores programas estudantis de tecnologia do mundo e fortalecer nossos laços com o ecossistema de desenvolvedores da nossa região. Estamos sempre abertos a parcerias que tragam valor para nossa comunidade. Vamos transformar a realidade técnica dos nossos membros e colocar o Pará permanentemente no mapa da inovação.",
+          "Na KERNEL, a metodologia é simples e direta: a gente aprende, a gente ensina e a gente constrói. Se você quer acesso à tecnologia de ponta, liberdade para criar seus projetos, e fazer parte de uma comunidade que realmente compartilha conhecimento — seu lugar é aqui.",
+          "Somos a base. Somos o núcleo. Somos KERNEL.",
+        ],
+      },
+      {
+        title: "Código de Conduta",
+        intro: "Para cumprir nosso manifesto e garantir um espaço verdadeiramente seguro, prático e colaborativo, a KERNEL mantém este Código de Conduta para todos os nossos eventos presenciais, espaços online (GitHub, WhatsApp) e projetos comunitários.",
+        subsections: [
+          {
+            title: "1. Comportamento Esperado",
+            content: "Esperamos que todos os membros, mentores e parceiros ajudem a criar um ambiente intencionalmente inclusivo:",
+            items: [
+              "Use linguagem acolhedora e inclusiva: Respeite pronomes e use fraseado colaborativo e solidário.",
+              "Demonstre empatia e gentileza: Seja respeitoso com diferentes pontos de vista, limitações de hardware e níveis variados de experiência.",
+              "Fomente o aprendizado, não o ego: Busque desmistificar tópicos complexos em vez de atuar como um gatekeeping.",
+              "Projeto para as margens: Priorize a segurança e inclusão de grupos marginalizados e sub-representados em tech sobre o conforto do status quo.",
+              "Foco no impacto sobre intenção: Se for dito que suas palavras ou ações causaram dano, ouça, peça desculpas, e se comprometa a fazer melhor.",
+            ],
+          },
+          {
+            title: "2. Comportamento Inaceitável",
+            content: "O comportamento a seguir viola nossos valores fundamentais e é estritamente proibido:",
+            items: [
+              "O uso de linguagem ou imagens sexualizadas, e atenção ou avanços sexuais indesejados.",
+              "Trolling, comentários insultuosos ou depreciativos, e ataques pessoais ou políticos (p. ex., piadas racistas, sexistas, capacitistas ou homofóbicas).",
+              "Linguagem ou comportamento condescendente projetado para fazer outras pessoas se sentirem inferiores (p. ex., explicações \"Bem, na verdade...\" desnecessárias).",
+              "Interrupção repetida ou falar sobre outras pessoas, especialmente participantes juniores ou indivíduos marginalizados.",
+              "Assédio público ou privado, doxing, ou publicação das informações privadas de outras pessoas sem permissão explícita.",
+              "Qualquer outra conduta que pudesse ser razoavelmente considerada inadequada em um ambiente profissional e acolhedor.",
+            ],
+          },
+          {
+            title: "3. Como Relatar",
+            content: "Se você experiencia ou testemunha comportamento inaceitável, ou tem qualquer outra preocupação, reporte imediatamente. Você pode fazer isso por:",
+            items: [
+              "Contatando o Time Core da KERNEL pelo email em kernel-uepa@gmail.com.",
+              "Enviando mensagem privada direto para qualquer Core Organizer em nossa Comunidade WhatsApp oficial.",
+              "Todas as reclamações serão revisadas e investigadas prontamente e serão mantidas estritamente confidenciais para proteger o denunciante.",
+            ],
+          },
+          {
+            title: "4. Aplicação e Consequências",
+            content: "O Time Core da KERNEL é responsável por esclarecer os padrões de comportamento aceitável e tomará ações apropriadas e justas em resposta a qualquer instância de comportamento inaceitável. Se um membro da comunidade se engajar em comportamento inaceitável, o Time Core pode tomar qualquer ação que considerem apropriada, incluindo:",
+            items: [
+              "Um aviso privado esclarecendo o impacto do comportamento.",
+              "Um requisito para emitir um pedido de desculpas formal.",
+              "A deletação de comentários, código ou mensagens inadequadas.",
+              "Banimento temporário dos eventos KERNEL (presenciais e digitais).",
+              "Expulsão permanente da KERNEL, da Comunidade WhatsApp e da organização GitHub sem aviso.",
+            ],
+          },
+        ],
+      },
     ],
   },
   backToHome: "Voltar ao início",
