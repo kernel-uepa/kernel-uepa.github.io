@@ -13,7 +13,6 @@ export const community = {
   socials: {
     instagram: "https://instagram.com/kernel.uepa",
     linkedin: "https://linkedin.com/company/kernel-uepa",
-    x: "https://x.com/kernel",
     discord: "https://discord.gg/kernel",
     youtube: "https://youtube.com/@kernel-uepa",
     github: "https://github.com/kernel-uepa",

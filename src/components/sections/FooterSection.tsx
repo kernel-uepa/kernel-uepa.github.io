@@ -1,12 +1,11 @@
 import { community } from "@/config/community";
 import { useI18n } from "@/i18n/I18nContext";
 import { Link } from "react-router-dom";
-import { Instagram, Linkedin, Twitter, MessageCircle, Youtube, Github } from "lucide-react";
+import { Instagram, Linkedin, MessageCircle, Youtube, Github } from "lucide-react";
 
 const socialIcons = [
   { key: "instagram", icon: Instagram, href: community.socials.instagram },
   { key: "linkedin", icon: Linkedin, href: community.socials.linkedin },
-  { key: "x", icon: Twitter, href: community.socials.x },
   { key: "discord", icon: MessageCircle, href: community.socials.discord },
   { key: "youtube", icon: Youtube, href: community.socials.youtube },
   { key: "github", icon: Github, href: community.socials.github },

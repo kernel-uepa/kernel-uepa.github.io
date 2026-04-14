@@ -140,7 +140,6 @@ export const en = {
     socials: [
       { name: "Instagram", description: "Behind-the-scenes content, event highlights, and community stories." },
       { name: "LinkedIn", description: "Professional updates, member achievements, and career opportunities." },
-      { name: "X (Twitter)", description: "Quick takes on tech trends, live event threads, and community banter." },
       {
         name: "Discord",
         description: "Our main hub — chat with members, join project channels, and get help in real-time.",

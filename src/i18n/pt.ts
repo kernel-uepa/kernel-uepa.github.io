@@ -146,7 +146,6 @@ export const pt = {
         name: "LinkedIn",
         description: "Atualizações profissionais, conquistas de membros e oportunidades de carreira.",
       },
-      { name: "X (Twitter)", description: "Opiniões rápidas sobre tech, threads ao vivo e bate-papo da comunidade." },
       {
         name: "Discord",
         description:
