@@ -108,7 +108,7 @@ export const pt = {
       {
         question: "Quanto tempo preciso dedicar?",
         answer:
-          "É completamente flexível. Você pode participar de eventos, contribuir em projetos ou apenas interagir no nosso Discord — o que funcionar na sua agenda.",
+          "É completamente flexível. Você pode participar de eventos, contribuir em projetos ou apenas interagir na nossa comunidade do Whatsapp — o que funcionar na sua agenda.",
       },
       {
         question: "Que tipo de projetos vocês desenvolvem?",
@@ -128,12 +128,12 @@ export const pt = {
       {
         question: "Como posso me envolver em um projeto?",
         answer:
-          "Entre no nosso Discord, confira o canal #projetos e escolha algo que te interesse. Os líderes de projeto estão sempre dispostos a integrar novos contribuidores.",
+          "Entre na nossa comunidade do Whatsapp, confira o canal #projetos e escolha algo que te interesse. Os líderes de projeto estão sempre dispostos a integrar novos contribuidores.",
       },
       {
         question: "Vocês organizam eventos?",
         answer:
-          "Sim! Organizamos regularmente workshops, hackathons, tech talks e encontros sociais. Siga-nos nas redes sociais ou confira o Discord para os próximos eventos.",
+          "Sim! Organizamos regularmente workshops, hackathons, tech talks e encontros sociais. Siga-nos nas redes sociais ou confira a comunidade do Whatsapp para os próximos eventos.",
       },
     ],
   },
@@ -147,7 +147,7 @@ export const pt = {
         description: "Atualizações profissionais, conquistas de membros e oportunidades de carreira.",
       },
       {
-        name: "Discord",
+        name: "Whatsapp",
         description:
           "Nosso hub principal — converse com membros, entre em canais de projeto e tire dúvidas em tempo real.",
       },

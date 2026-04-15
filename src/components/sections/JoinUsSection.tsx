@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const socialPlatforms = [
   { key: "instagram", icon: Instagram, href: community.socials.instagram },
   { key: "linkedin", icon: Linkedin, href: community.socials.linkedin },
-  { key: "discord", icon: MessageCircle, href: community.socials.discord },
+  { key: "whatsapp", icon: MessageCircle, href: community.socials.whatsapp },
   { key: "youtube", icon: Youtube, href: community.socials.youtube },
   { key: "github", icon: Github, href: community.socials.github },
 ] as const;

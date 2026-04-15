@@ -105,7 +105,7 @@ export const en = {
       {
         question: "How much time commitment is expected?",
         answer:
-          "It's completely flexible. You can attend events, contribute to projects, or just hang out in our Discord — whatever works for your schedule.",
+          "It's completely flexible. You can attend events, contribute to projects, or just hang out in our WhatsApp Community — whatever works for your schedule.",
       },
       {
         question: "What kind of projects do you work on?",
@@ -125,12 +125,12 @@ export const en = {
       {
         question: "How do I get involved in a project?",
         answer:
-          "Join our Discord, check out the #projects channel, and pick something that interests you. Project leads are always happy to onboard new contributors.",
+          "Join our WhatsApp Community, check out the #projects channel, and pick something that interests you. Project leads are always happy to onboard new contributors.",
       },
       {
         question: "Do you host events?",
         answer:
-          "Yes! We regularly host workshops, hackathons, tech talks, and social meetups. Follow us on our socials or check Discord for upcoming events.",
+          "Yes! We regularly host workshops, hackathons, tech talks, and social meetups. Follow us on our socials or check WhatsApp Community for upcoming events.",
       },
     ],
   },
@@ -141,7 +141,7 @@ export const en = {
       { name: "Instagram", description: "Behind-the-scenes content, event highlights, and community stories." },
       { name: "LinkedIn", description: "Professional updates, member achievements, and career opportunities." },
       {
-        name: "Discord",
+        name: "Whatsapp",
         description: "Our main hub — chat with members, join project channels, and get help in real-time.",
       },
       { name: "YouTube", description: "Workshop recordings, tech talks, project demos, and tutorials." },
