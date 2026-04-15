@@ -95,6 +95,22 @@ export const pt = {
         name: "GitLab",
         description: "Habilitando nosso fluxo open-source com ferramentas premium de DevOps e pipelines CI/CD.",
       },
+      {
+        name: "Devs Norte",
+        description: "Lorem Ipsum",
+      },
+      {
+        name: "AWS Cloud Club UEPA",
+        description: "Lorem Ipsum",
+      },
+      {
+        name: " CAESoft UEPA",
+        description: "Lorem Ipsum",
+      },
+      {
+        name: "CAEComp UFPA",
+        description: "Lorem Ipsum",
+      },
     ],
   },
   faq: {

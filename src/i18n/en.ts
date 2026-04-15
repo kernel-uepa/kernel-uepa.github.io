@@ -130,7 +130,7 @@ export const en = {
       {
         question: "Do you host events?",
         answer:
-          "Yes! We regularly host workshops, hackathons, tech talks, and social meetups. Follow us on our socials or check WhatsApp Community for upcoming events.",
+          "Yes! We regularly host workshops, hackathons, tech talks, and social meetups. Follow us on our socials or check WhatsApp Communityss for upcoming events.",
       },
     ],
   },

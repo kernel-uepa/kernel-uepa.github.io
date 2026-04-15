@@ -20,18 +20,19 @@ export const community = {
 
   members: {
     stats: [
-      { value: "60" },
+      { value: "54" },
       { value: "1" },
       { value: "1" },
       { value: "2" },
     ],
     leadership: [
-      { name: "Jorge Hermes", role: "President", photo: "https://i.pravatar.cc/300?img=11", socials: { linkedin: "#", github: "#" } },
-      { name: "João Victor", role: "Design and Branding Lead", photo: "https://i.pravatar.cc/300?img=12", socials: { linkedin: "#", github: "#" } },
-      { name: "Thaylan Fonseca", role: "Events and Workshops Lead", photo: "https://i.pravatar.cc/300?img=5", socials: { linkedin: "#", github: "#" } },
-      { name: "Ryan Ricardo", role: "Partnership Lead", photo: "https://i.pravatar.cc/300?img=32", socials: { linkedin: "#", github: "#" } },
-      { name: "Ryan Santana", role: "Community Manager", photo: "https://i.pravatar.cc/300?img=13", socials: { linkedin: "#", github: "#" } },
-      { name: "Luis Felipe", role: "Tech Lead", photo: "https://i.pravatar.cc/300?img=14", socials: { linkedin: "#", github: "#" } },
+      { name: "Jorge Hermes", role: "President", photo: "https://avatars.githubusercontent.com/u/91022739?v=4", socials: { linkedin: "https://www.linkedin.com/in/jhermesn/", github: "https://github.com/jhermesn" } },
+      { name: "João Vitor", role: "Design and Branding Lead", photo: "https://avatars.githubusercontent.com/u/141349338?v=4", socials: { linkedin: "https://www.linkedin.com/in/joaovitor-reis/", github: "https://github.com/jotavedreis" } },
+      { name: "Thaylan Fonseca", role: "Events and Workshops Lead", photo: "https://avatars.githubusercontent.com/u/196565378?v=4", socials: { linkedin: "https://www.linkedin.com/in/thaylanbf1/", github: "https://github.com/thaylanbf1" } },
+      { name: "Ryan Ricardo", role: "Partnership Lead", photo: "https://avatars.githubusercontent.com/u/140509330?v=4", socials: { linkedin: "https://www.linkedin.com/in/theunrealryan/", github: "https://github.com/theunrealryan" } },
+      { name: "Ryan Santana", role: "Community Manager", photo: "https://avatars.githubusercontent.com/u/166767290?v=4", socials: { linkedin: "https://www.linkedin.com/in/ryan-souza-santana-785a09293/", github: "https://github.com/Ryan-S-S" } },
+      { name: "Luis Felipe", role: "Tech Lead", photo: "https://avatars.githubusercontent.com/u/255732559?v=4", socials: { linkedin: "https://www.linkedin.com/in/luis-mendes-66b245380/", github: "https://github.com/MendesFl" } },
+      { name: "Lucas", role: "Lorem Ipsum", photo: "https://i.pravatar.cc/300?img=15", socials: { linkedin: "#", github: "#" } },
     ],
   },
 
@@ -50,10 +51,14 @@ export const community = {
   ],
 
   partners: [
-    { image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/320px-Google_2015_logo.svg.png", link: "https://google.com" },
-    { image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/320px-Microsoft_logo_%282012%29.svg.png", link: "https://microsoft.com" },
-    { image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/320px-Amazon_logo.svg.png", link: "https://aws.amazon.com" },
-    { image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/GitLab_logo.svg/320px-GitLab_logo.svg.png", link: "https://gitlab.com" },
+    { image: "https://www.svgrepo.com/show/475656/google-color.svg", link: "https://google.com" },
+    { image: "  https://www.svgrepo.com/show/448239/microsoft.svg", link: "https://microsoft.com" },
+    { image: "https://www.svgrepo.com/show/448266/aws.svg", link: "https://aws.amazon.com" },
+    { image: "https://www.svgrepo.com/show/448226/gitlab.svg", link: "https://gitlab.com" },
+    { image: "https://devsnorte.com/icons/logo.svg", link: "https://devsnorte.com/pt" },
+    { image: "https://awscc-uepa.github.io/cc-logo.png", link: "https://awscc-uepa.github.io/" },
+    { image: "../../src/test/474534794_1617509309134347_5698482693398519023_n.jpg", link: "https://devsnorte.com/pt" }, //Mudar para logo online, por enquanto coloquei o logo baixado no /src/test
+    { image: "https://ugc.production.linktr.ee/8e1e7820-aa27-475a-b673-aad5959d433f_Logo-CAECOMP-com-fundo.png?io=true&size=avatar-v3_0", link: "https://linktr.ee/caecomp.ufpa" },
   ],
 
   location: {
@@ -62,7 +67,4 @@ export const community = {
     city: "Ananindeua, Pará — Brasil",
   },
 
-  trello: {
-    boardId: "JaLUjzT1",
-  },
 } as const;
