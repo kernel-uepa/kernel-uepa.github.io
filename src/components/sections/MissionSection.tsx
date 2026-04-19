@@ -1,4 +1,4 @@
-import { useI18n } from "@/i18n/I18nContext";
+import { useI18n } from "@/i18n/useI18n.ts";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";

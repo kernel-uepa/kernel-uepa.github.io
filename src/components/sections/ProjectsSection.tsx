@@ -1,5 +1,5 @@
 import { community } from "@/config/community";
-import { useI18n } from "@/i18n/I18nContext";
+import { useI18n } from "@/i18n/useI18n.ts";
 import { ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";

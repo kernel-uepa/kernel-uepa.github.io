@@ -1,6 +1,9 @@
 export const en = {
   common: {
     viewMore: "View More",
+    scrollToAbout: "Scroll to about section",
+    openMenu: "Open menu",
+    closeMenu: "Close menu",
   },
   nav: {
     about: "About",

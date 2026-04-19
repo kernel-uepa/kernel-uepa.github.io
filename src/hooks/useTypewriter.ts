@@ -1,32 +1,15 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 
 export function useTypewriter(phrases: readonly string[], typingSpeed = 60, deletingSpeed = 30, pauseMs = 2000) {
   const [text, setText] = useState("");
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const tick = useCallback(() => {
-    const current = phrases[phraseIndex];
-    if (!current) return;
-
-    if (!isDeleting) {
-      if (text.length < current.length) {
-        return typingSpeed;
-      } else {
-        // Pause before deleting
-        setIsDeleting(true);
-        return pauseMs;
-      }
-    } else {
-      if (text.length > 0) {
-        return deletingSpeed;
-      } else {
-        setIsDeleting(false);
-        setPhraseIndex((prev) => (prev + 1) % phrases.length);
-        return 300; // small pause before next phrase
-      }
-    }
-  }, [text, phraseIndex, isDeleting, phrases, typingSpeed, deletingSpeed, pauseMs]);
+  useEffect(() => {
+    setText("");
+    setPhraseIndex(0);
+    setIsDeleting(false);
+  }, [phrases]);
 
   useEffect(() => {
     const current = phrases[phraseIndex];

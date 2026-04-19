@@ -1,5 +1,5 @@
 import { community } from "@/config/community";
-import { useI18n } from "@/i18n/I18nContext";
+import { useI18n } from "@/i18n/useI18n.ts";
 import { translations } from "@/i18n/translations";
 import { ExternalLink, ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { Badge } from "@/components/ui/badge";

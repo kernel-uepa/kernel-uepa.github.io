@@ -23,7 +23,7 @@ export const community = {
       { value: "54" },
       { value: "1" },
       { value: "1" },
-      { value: "2" },
+      { value: "1" },
     ],
     leadership: [
       { name: "Jorge Hermes", role: "President", photo: "https://avatars.githubusercontent.com/u/91022739?v=4", socials: { linkedin: "https://www.linkedin.com/in/jhermesn/", github: "https://github.com/jhermesn" } },

@@ -1,4 +1,4 @@
-import { useI18n } from "@/i18n/I18nContext";
+import { useI18n } from "@/i18n/useI18n.ts";
 import { translations } from "@/i18n/translations";
 import { motion } from "framer-motion";
 import {

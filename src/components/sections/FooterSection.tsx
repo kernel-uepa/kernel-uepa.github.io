@@ -1,5 +1,5 @@
 import { community } from "@/config/community";
-import { useI18n } from "@/i18n/I18nContext";
+import { useI18n } from "@/i18n/useI18n.ts";
 import { Link } from "react-router-dom";
 import { Instagram, Linkedin, MessageCircle, Youtube, Github } from "lucide-react";
 
@@ -12,7 +12,7 @@ const socialIcons = [
 ];
 
 const FooterSection = () => {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
 
   return (
     <footer className="border-t border-border px-6 py-12">
@@ -25,11 +25,11 @@ const FooterSection = () => {
           ))}
         </div>
         <div className="flex items-center gap-4 text-xs text-muted-foreground">
-          <Link to="/terms" className="transition-colors hover:text-foreground">{t("footer.terms")}</Link>
+          <Link to={`/terms?lang=${locale}`} className="transition-colors hover:text-foreground">{t("footer.terms")}</Link>
           <span>·</span>
-          <Link to="/privacy" className="transition-colors hover:text-foreground">{t("footer.privacy")}</Link>
+          <Link to={`/privacy?lang=${locale}`} className="transition-colors hover:text-foreground">{t("footer.privacy")}</Link>
           <span>·</span>
-          <Link to="/manifesto" className="transition-colors hover:text-foreground">{t("footer.manifesto")}</Link>
+          <Link to={`/manifesto?lang=${locale}`} className="transition-colors hover:text-foreground">{t("footer.manifesto")}</Link>
         </div>
         <p className="text-sm text-muted-foreground">{t("footer.copyright")}</p>
       </div>

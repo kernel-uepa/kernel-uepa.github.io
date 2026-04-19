@@ -1,5 +1,5 @@
 import { community } from "@/config/community";
-import { useI18n } from "@/i18n/I18nContext";
+import { useI18n } from "@/i18n/useI18n.ts";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useCountUp } from "@/hooks/useCountUp";
 import { Linkedin, Github } from "lucide-react";

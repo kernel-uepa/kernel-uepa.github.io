@@ -1,6 +1,9 @@
 export const pt = {
   common: {
     viewMore: "Saiba Mais",
+    scrollToAbout: "Rolar para a seção sobre",
+    openMenu: "Abrir menu",
+    closeMenu: "Fechar menu",
   },
   nav: {
     about: "Sobre",

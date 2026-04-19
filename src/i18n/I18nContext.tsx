@@ -1,15 +1,17 @@
-import { createContext, useContext, useState, useEffect, ReactNode } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import { translations, type Locale, type TranslationKeys } from "@/i18n/translations";
-
-interface I18nContextType {
-  locale: Locale;
-  setLocale: (locale: Locale) => void;
-  t: (key: TranslationKeys) => string;
-}
-
-const I18nContext = createContext<I18nContextType | undefined>(undefined);
+import { I18nContext } from "@/i18n/I18nContextStore";
 
 function detectLocale(): Locale {
+  const searchLang = new URLSearchParams(window.location.search).get("lang");
+  if (searchLang && searchLang in translations) return searchLang as Locale;
+
+  const hashQuery = window.location.hash.includes("?")
+    ? window.location.hash.split("?")[1]
+    : "";
+  const hashLang = hashQuery ? new URLSearchParams(hashQuery).get("lang") : null;
+  if (hashLang && hashLang in translations) return hashLang as Locale;
+
   const saved = localStorage.getItem("locale");
   if (saved && saved in translations) return saved as Locale;
   const browserLang = navigator.language.slice(0, 2);
@@ -32,11 +34,14 @@ export const I18nProvider = ({ children }: { children: ReactNode }) => {
 
   const t = (key: TranslationKeys): string => {
     const keys = key.split(".");
-    let value: any = translations[locale];
+    let value: unknown = translations[locale];
     for (const k of keys) {
-      value = value?.[k];
+      if (typeof value !== "object" || value === null || !(k in value)) {
+        return key;
+      }
+      value = (value as Record<string, unknown>)[k];
     }
-    return (value as string) ?? key;
+    return typeof value === "string" ? value : key;
   };
 
   return (
@@ -46,8 +51,3 @@ export const I18nProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export const useI18n = () => {
-  const ctx = useContext(I18nContext);
-  if (!ctx) throw new Error("useI18n must be used within I18nProvider");
-  return ctx;
-};
