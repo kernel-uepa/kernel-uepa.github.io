@@ -12,9 +12,9 @@ export const community = {
 
   socials: {
     instagram: "https://instagram.com/kernel.uepa",
-    linkedin: "https://linkedin.com/company/kernel-uepa",
+    linkedin: "https://www.linkedin.com/in/kernel-uepa-01a830404/",
     whatsapp: "https://chat.whatsapp.com/HVECWIERsiM1ki1NamlYpo",
-    youtube: "https://youtube.com/@kernel-uepa",
+    youtube: "https://www.youtube.com/@kernel-uepa",
     github: "https://github.com/kernel-uepa",
   },
 
@@ -30,9 +30,9 @@ export const community = {
       { name: "João Vitor", role: "Design and Branding Lead", photo: "https://avatars.githubusercontent.com/u/141349338?v=4", socials: { linkedin: "https://www.linkedin.com/in/joaovitor-reis/", github: "https://github.com/jotavedreis" } },
       { name: "Thaylan Fonseca", role: "Events and Workshops Lead", photo: "https://avatars.githubusercontent.com/u/196565378?v=4", socials: { linkedin: "https://www.linkedin.com/in/thaylanbf1/", github: "https://github.com/thaylanbf1" } },
       { name: "Ryan Ricardo", role: "Partnership Lead", photo: "https://avatars.githubusercontent.com/u/140509330?v=4", socials: { linkedin: "https://www.linkedin.com/in/theunrealryan/", github: "https://github.com/theunrealryan" } },
-      { name: "Ryan Santana", role: "Community Manager", photo: "https://avatars.githubusercontent.com/u/166767290?v=4", socials: { linkedin: "https://www.linkedin.com/in/ryan-souza-santana-785a09293/", github: "https://github.com/Ryan-S-S" } },
-      { name: "Luis Felipe", role: "Tech Lead", photo: "https://avatars.githubusercontent.com/u/255732559?v=4", socials: { linkedin: "https://www.linkedin.com/in/luis-mendes-66b245380/", github: "https://github.com/MendesFl" } },
-      { name: "Lucas Rego", role: "Lorem Ipsum", photo: "https://i.pravatar.cc/300?img=15", socials: { linkedin: "https://www.linkedin.com/in/lucas-rego-conduru-649a5a364/", github: "#" } },
+      { name: "Ryan Santana", role: "Community Manager", photo: "/public/photos/foto-ryansantana.jpg", socials: { linkedin: "https://www.linkedin.com/in/ryan-souza-santana-785a09293/", github: "https://github.com/Ryan-S-S" } },
+      { name: "Luis Felipe", role: "Tech Lead", photo: "/public/photos/foto-luisfelipe.jpg", socials: { linkedin: "https://www.linkedin.com/in/luis-mendes-66b245380/", github: "https://github.com/MendesFl" } },
+      { name: "Lucas Rego", role: "Lorem Ipsum", photo: "/public/photos/foto-lucasrego.jpg", socials: { linkedin: "https://www.linkedin.com/in/lucas-rego-conduru-649a5a364/", } },
     ],
   },
 
