@@ -80,17 +80,18 @@ export const en = {
     title: "Our Partners",
     items: [
       {
-        name: "Google",
-        description: "Supporting student developers through programs, tools, and mentorship opportunities.",
+        name: "DevsNorte",
+        description: "Supporting student developers with programs, tools, and mentorship opportunities.",
       },
-      { name: "Microsoft", description: "Providing cloud credits, dev tools, and sponsoring our annual hackathon." },
+      { name: "AWS Cloud Club UEPA",
+        description: "Providing cloud credits, dev tools, and sponsoring our annual hackathon." },
       {
-        name: "Amazon Web Services",
-        description: "Powering our infrastructure with cloud services and training resources.",
+        name: "CaeSoft UEPA",
+        description: "UEPA software council focused on software development, DevOps culture, and open-source projects.",
       },
       {
-        name: "GitLab",
-        description: "Enabling our open-source workflow with premium DevOps tools and CI/CD pipelines.",
+        name: "CAEComp UFPA",
+        description: "Computer engineering student council at UFPA, fostering tech culture and collaboration across Pará's universities.",
       },
     ],
   },

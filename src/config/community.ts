@@ -51,14 +51,10 @@ export const community = {
   ],
 
   partners: [
-    { image: "https://www.svgrepo.com/show/475656/google-color.svg", link: "https://google.com" },
-    { image: "  https://www.svgrepo.com/show/448239/microsoft.svg", link: "https://microsoft.com" },
-    { image: "https://www.svgrepo.com/show/448266/aws.svg", link: "https://aws.amazon.com" },
-    { image: "https://www.svgrepo.com/show/448226/gitlab.svg", link: "https://gitlab.com" },
     { image: "https://devsnorte.com/icons/logo.svg", link: "https://devsnorte.com/pt" },
     { image: "https://awscc-uepa.github.io/cc-logo.png", link: "https://awscc-uepa.github.io/" },
-    { image: "../../src/test/474534794_1617509309134347_5698482693398519023_n.jpg", link: "https://devsnorte.com/pt" }, //Mudar para logo online, por enquanto coloquei o logo baixado no /src/test
-    { image: "https://ugc.production.linktr.ee/8e1e7820-aa27-475a-b673-aad5959d433f_Logo-CAECOMP-com-fundo.png?io=true&size=avatar-v3_0", link: "https://linktr.ee/caecomp.ufpa" },
+    { image: "/caesoft.png", link: "https://www.instagram.com/caesoft.uepa/" }, //Mudar para logo online, por enquanto coloquei o logo baixado no /src/test
+    { image: "/caecomp.png", link: "https://linktr.ee/caecomp.ufpa" },
   ],
 
   location: {

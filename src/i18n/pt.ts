@@ -80,36 +80,20 @@ export const pt = {
     title: "Nossos Parceiros",
     items: [
       {
-        name: "Google",
+        name: "DevsNorte",
         description: "Apoiando desenvolvedores estudantes com programas, ferramentas e oportunidades de mentoria.",
       },
       {
-        name: "Microsoft",
-        description: "Fornecendo créditos de nuvem, ferramentas de dev e patrocinando nosso hackathon anual.",
-      },
-      {
-        name: "Amazon Web Services",
-        description: "Potencializando nossa infraestrutura com serviços cloud e recursos de treinamento.",
-      },
-      {
-        name: "GitLab",
-        description: "Habilitando nosso fluxo open-source com ferramentas premium de DevOps e pipelines CI/CD.",
-      },
-      {
-        name: "Devs Norte",
-        description: "Lorem Ipsum",
-      },
-      {
         name: "AWS Cloud Club UEPA",
-        description: "Lorem Ipsum",
+        description: "Comunidade dedicada ao domínio da Amazon Web Services e da arquitetura de nuvem moderna. ",
       },
       {
-        name: " CAESoft UEPA",
-        description: "Lorem Ipsum",
+        name: "CaeSoft UEPA",
+        description: "Concelho de software da UEPA focado em desenvolvimento de software, cultura DevOps e projetos open-source.",
       },
       {
         name: "CAEComp UFPA",
-        description: "Lorem Ipsum",
+        description: "Conselho Acadêmico de Engenharia de Computação da UFPA, promovendo atividades acadêmicas, eventos e projetos para estudantes de computação.",
       },
     ],
   },
