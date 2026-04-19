@@ -1,4 +1,7 @@
 export const pt = {
+  common: {
+    viewMore: "Saiba Mais",
+  },
   nav: {
     about: "Sobre",
     members: "Membros",
@@ -51,28 +54,10 @@ export const pt = {
     title: "Nossos Eventos",
     items: [
       {
-        title: "Hackathon 2026",
-        date: "15–16 de Março, 2026",
+        title: "Primeiro Encontro AWS Cloud Club",
+        date: "16 de Março de 2026",
         description:
-          "Um hackathon de 24 horas onde equipes criam soluções inovadoras para problemas do mundo real. Aberto a todos os níveis com mentores, workshops e prêmios.",
-      },
-      {
-        title: "Workshop de IA",
-        date: "20 de Fevereiro, 2026",
-        description:
-          "Workshop prático cobrindo fundamentos de machine learning, desde pré-processamento de dados até deploy de modelos. Traga seu laptop e curiosidade.",
-      },
-      {
-        title: "Dia do Open Source",
-        date: "25 de Janeiro, 2026",
-        description:
-          "Um dia inteiro dedicado a contribuir para projetos open-source. Iniciantes são bem-vindos — vamos guiar você no seu primeiro pull request.",
-      },
-      {
-        title: "Tech Talk: Web3 & Além",
-        date: "10 de Dezembro, 2025",
-        description:
-          "Palestrantes da indústria discutem o futuro das tecnologias descentralizadas, desenvolvimento blockchain e o que isso significa para desenvolvedores estudantes.",
+          "Nosso primeiro encontro da AWS Cloud Club foi um sucesso! Somos muitíssimo gratos a todos que puderam comparecer e a todos os palestrantes que dispuseram do seu tempo para compartilhar seus conhecimentos. A equipe AWS Cloud Club at UEPA agradece grandemente.",
       },
     ],
   },

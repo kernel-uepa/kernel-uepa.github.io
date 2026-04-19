@@ -32,7 +32,7 @@ export const community = {
       { name: "Ryan Ricardo", role: "Partnership Lead", photo: "https://avatars.githubusercontent.com/u/140509330?v=4", socials: { linkedin: "https://www.linkedin.com/in/theunrealryan/", github: "https://github.com/theunrealryan" } },
       { name: "Ryan Santana", role: "Community Manager", photo: "https://avatars.githubusercontent.com/u/166767290?v=4", socials: { linkedin: "https://www.linkedin.com/in/ryan-souza-santana-785a09293/", github: "https://github.com/Ryan-S-S" } },
       { name: "Luis Felipe", role: "Tech Lead", photo: "https://avatars.githubusercontent.com/u/255732559?v=4", socials: { linkedin: "https://www.linkedin.com/in/luis-mendes-66b245380/", github: "https://github.com/MendesFl" } },
-      { name: "Lucas", role: "Lorem Ipsum", photo: "https://i.pravatar.cc/300?img=15", socials: { linkedin: "#", github: "#" } },
+      { name: "Lucas Rego", role: "Lorem Ipsum", photo: "https://i.pravatar.cc/300?img=15", socials: { linkedin: "https://www.linkedin.com/in/lucas-rego-conduru-649a5a364/", github: "#" } },
     ],
   },
 
@@ -44,10 +44,7 @@ export const community = {
   ],
 
   events: [
-    { image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" },
-    { image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80" },
-    { image: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80" },
-    { image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80" },
+    { image: "/public/photos/first-meetup-aws-cloud-club.jpg", link: "https://www.linkedin.com/posts/awscc-uepa_nosso-primeiro-encontro-da-aws-cloud-club-activity-7439630918862020608-w1eJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADxdpsABhdAEhrf1CtXAT6ZnC2jAKh-ruN4" },
   ],
 
   partners: [

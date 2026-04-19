@@ -10,19 +10,15 @@ import { useGithubRepositories } from "@/hooks/useGithubRepositories";
 const WorkSection = () => {
   const { t, locale } = useI18n();
   const { projects, loading } = useGithubRepositories();
-  const configEvents = community.events;
+  const configEvents = community.events as readonly ({ readonly image: string; readonly link?: string })[];
   const events = translations[locale].events.items as readonly { title: string; date: string; description: string }[];
+
+  const total: number = configEvents.length;
 
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1);
   const [paused, setPaused] = useState(false);
   const pauseTimeout = useRef<ReturnType<typeof setTimeout>>();
-
-  const total: number = configEvents.length;
-
-  if (total === 0) {
-    return null;
-  }
 
   const goTo = useCallback((index: number, dir: number) => {
     setDirection(dir);
@@ -48,6 +44,10 @@ const WorkSection = () => {
   useEffect(() => {
     return () => { if (pauseTimeout.current) clearTimeout(pauseTimeout.current); };
   }, []);
+
+  if (total === 0) {
+    return null;
+  }
 
   const event = configEvents[current];
   const translated = events[current];
@@ -170,15 +170,28 @@ const WorkSection = () => {
               animate="center"
               exit="exit"
               transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="flex flex-col md:flex-row"
+              className="flex flex-col md:flex-row cursor-pointer group"
+              onClick={() => {
+                if (event.link) {
+                  window.open(event.link, '_blank', 'noopener,noreferrer');
+                }
+              }}
             >
-              <div className="relative h-56 w-full md:h-auto md:w-1/2 shrink-0">
+              <div className="relative h-56 w-full md:h-auto md:w-1/2 shrink-0 overflow-hidden">
                 <img
                   src={event.image}
                   alt={translated?.title ?? ""}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                 />
+                {event.link && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors duration-300 group-hover:bg-black/30 flex-col gap-2">
+                    <ExternalLink className="h-6 w-6 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <span className="text-white text-sm font-semibold opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                      {t("common.viewMore") || "View More"}
+                    </span>
+                  </div>
+                )}
               </div>
               <div className="flex flex-col justify-center p-6 md:p-10 flex-1">
                 <span className="mb-2 text-xs font-medium uppercase tracking-widest text-muted-foreground">

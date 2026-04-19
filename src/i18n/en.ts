@@ -1,4 +1,7 @@
 export const en = {
+  common: {
+    viewMore: "View More",
+  },
   nav: {
     about: "About",
     members: "Members",
@@ -51,28 +54,9 @@ export const en = {
     title: "Our Events",
     items: [
       {
-        title: "Hackathon 2026",
-        date: "March 15–16, 2026",
-        description:
-          "A 24-hour hackathon where teams build innovative solutions to real-world problems. Open to all skill levels with mentors, workshops, and prizes.",
-      },
-      {
-        title: "AI Workshop Series",
-        date: "February 20, 2026",
-        description:
-          "Hands-on workshop covering machine learning fundamentals, from data preprocessing to model deployment. Bring your laptop and curiosity.",
-      },
-      {
-        title: "Open Source Day",
-        date: "January 25, 2026",
-        description:
-          "A full day dedicated to contributing to open-source projects. First-time contributors welcome — we'll guide you through your first pull request.",
-      },
-      {
-        title: "Tech Talk: Web3 & Beyond",
-        date: "December 10, 2025",
-        description:
-          "Industry speakers discuss the future of decentralized technologies, blockchain development, and what it means for student developers.",
+        title: "First AWS Cloud Club Meeting",
+        date: "16th March, 2026",
+        description: "Our first AWS Cloud Club meeting was a success! We are extremely grateful to everyone who was able to attend and to all the speakers who took the time to share their knowledge. The AWS Cloud Club at UEPA team greatly appreciates your support.",
       },
     ],
   },
