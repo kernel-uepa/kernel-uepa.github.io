@@ -30,7 +30,7 @@ export const community = {
       { name: "João Vitor", role: "Design and Branding Lead", photo: "https://avatars.githubusercontent.com/u/141349338?v=4", socials: { linkedin: "https://www.linkedin.com/in/joaovitor-reis/", github: "https://github.com/jotavedreis", instagram: "https://www.instagram.com/jotave_dev/" } },
       { name: "Thaylan Fonseca", role: "Events and Workshops Lead", photo: "https://avatars.githubusercontent.com/u/196565378?v=4", socials: { linkedin: "https://www.linkedin.com/in/thaylanbf1/", github: "https://github.com/thaylanbf1", instagram: "" } },
       { name: "Ryan Ricardo", role: "Partnership Lead", photo: "https://avatars.githubusercontent.com/u/140509330?v=4", socials: { linkedin: "https://www.linkedin.com/in/theunrealryan/", github: "https://github.com/theunrealryan", instagram: "" } }, 
-      { name: "Ryan Santana", role: "Community Manager", photo: "/public/photos/foto-ryansantana.jpg", socials: { linkedin: "https://www.linkedin.com/in/ryan-souza-santana-785a09293/", github: "https://github.com/Ryan-S-S", instagram: "" } },
+      { name: "Ryan Santana", role: "Community Manager", photo: "/photos/foto-ryansantana.jpg", socials: { linkedin: "https://www.linkedin.com/in/ryan-souza-santana-785a09293/", github: "https://github.com/Ryan-S-S", instagram: "" } },
       { name: "Luis Felipe", role: "Tech Lead", photo: "/photos/foto-luisfelipe.jpg", socials: { linkedin: "https://www.linkedin.com/in/luis-mendes-66b245380/", github: "https://github.com/MendesFl", instagram: "https://www.instagram.com/mendes_.lfy/" } },
       { name: "Lucas Rego", role: "Product Lead", photo: "/photos/foto-lucasrego.jpg", socials: { linkedin: "https://www.linkedin.com/in/lucas-rego-conduru-649a5a364/", github: "", instagram: ""} },
       { name: "Suziane Silva", role: "Developer", photo: "/photos/foto-suzianesilva.jpg", socials: { linkedin: "https://www.linkedin.com/in/suziane-silva-610011256/", github: "", instagram: ""} },
@@ -45,7 +45,7 @@ export const community = {
   ],
 
   events: [
-    { image: "/public/photos/first-meetup-aws-cloud-club.jpg", link: "https://www.linkedin.com/posts/awscc-uepa_nosso-primeiro-encontro-da-aws-cloud-club-activity-7439630918862020608-w1eJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADxdpsABhdAEhrf1CtXAT6ZnC2jAKh-ruN4" },
+    { image: "/photos/first-meetup-aws-cloud-club.jpg", link: "https://www.linkedin.com/posts/awscc-uepa_nosso-primeiro-encontro-da-aws-cloud-club-activity-7439630918862020608-w1eJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADxdpsABhdAEhrf1CtXAT6ZnC2jAKh-ruN4" },
   ],
 
   partners: [

@@ -1,13 +1,16 @@
 import { community } from "@/config/community";
 import { useI18n } from "@/i18n/useI18n.ts";
 import { translations } from "@/i18n/translations";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ExternalLink, ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect, useCallback, useRef } from "react";
+import { useGithubRepositories } from "@/hooks/useGithubRepositories";
 
 const WorkSection = () => {
   const { t, locale } = useI18n();
-  const configEvents = community.events;
+  const { projects, loading } = useGithubRepositories();
+  const configEvents = community.events as readonly ({ readonly image: string; readonly link?: string })[];
   const events = translations[locale].events.items as readonly { title: string; date: string; description: string }[];
 
   const [current, setCurrent] = useState(0);
@@ -69,71 +72,82 @@ const WorkSection = () => {
           {t("work.title")}
         </motion.h2>
 
-        {/* Projects — commented out until ready to announce */}
-        {/*
-          {community.projects.map((project, i) => (
-            <motion.div
-              key={project.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group relative flex flex-col rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:border-foreground/20"
-            >
-              <div className="mb-3 flex items-start justify-between">
-                <h3 className="text-lg font-semibold text-foreground">{project.title}</h3>
-                {project.link && (
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-foreground">
-                    <ExternalLink className="h-4 w-4" />
-                  </a>
-                )}
-              </div>
-              <p className="mb-4 flex-1 text-sm text-muted-foreground">{project.description}</p>
-              <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <Badge key={tag} variant="secondary" className="border-border bg-secondary text-muted-foreground text-xs">
-                    {tag}
-                  </Badge>
-                ))}
-              </div>
-            </motion.div>
-          ))}
-        */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-8">
-          {[0, 1, 2, 3].map((i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group relative flex flex-col rounded-xl border border-border bg-card p-6"
-            >
-              <div className="mb-3 flex items-start justify-between">
-                <div className="h-4 w-2/5 rounded bg-border/60" />
-                <div className="h-4 w-4 rounded bg-border/40" />
-              </div>
-              <div className="mb-2 h-3 w-full rounded bg-border/30" />
-              <div className="mb-4 h-3 w-4/5 rounded bg-border/30" />
-              <div className="flex gap-2">
-                <div className="h-5 w-14 rounded-full bg-border/40" />
-                <div className="h-5 w-14 rounded-full bg-border/40" />
-                <div className="h-5 w-14 rounded-full bg-border/40" />
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-16 flex flex-col items-center gap-1 text-center"
-        >
-          <p className="text-base font-semibold text-foreground">{t("projects.stayTuned")}</p>
-          <p className="text-sm text-muted-foreground">{t("projects.stayTunedSub")}</p>
-        </motion.div>
+        {/* Projects from GitHub */}
+        {loading ? (
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-8">
+            {[0, 1, 2, 3].map((i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="group relative flex flex-col rounded-xl border border-border bg-card p-6"
+              >
+                <div className="mb-3 flex items-start justify-between">
+                  <div className="h-4 w-2/5 rounded bg-border/60" />
+                  <div className="h-4 w-4 rounded bg-border/40" />
+                </div>
+                <div className="mb-2 h-3 w-full rounded bg-border/30" />
+                <div className="mb-4 h-3 w-4/5 rounded bg-border/30" />
+                <div className="flex gap-2">
+                  <div className="h-5 w-14 rounded-full bg-border/40" />
+                  <div className="h-5 w-14 rounded-full bg-border/40" />
+                  <div className="h-5 w-14 rounded-full bg-border/40" />
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        ) : projects.length > 0 ? (
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-8">
+            {projects.map((project, i) => (
+              <motion.a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={project.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="group relative flex flex-col rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:border-foreground/20 hover:shadow-lg"
+              >
+                <div className="mb-3 flex items-start justify-between">
+                  <h3 className="text-lg font-semibold text-foreground max-w-xs">{project.title}</h3>
+                  <ExternalLink className="h-4 w-4 text-muted-foreground transition-colors group-hover:text-foreground flex-shrink-0" />
+                </div>
+                <p className="mb-4 flex-1 text-sm text-muted-foreground line-clamp-2">{project.description}</p>
+                
+                <div className="flex items-center justify-between">
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.slice(0, 3).map((tag) => (
+                      <Badge key={tag} variant="secondary" className="border-border bg-secondary text-muted-foreground text-xs">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                  {project.stars > 0 && (
+                    <div className="flex items-center gap-1 ml-2 text-xs text-muted-foreground">
+                      <Star className="h-3 w-3" fill="currentColor" />
+                      <span>{project.stars}</span>
+                    </div>
+                  )}
+                </div>
+              </motion.a>
+            ))}
+          </div>
+        ) : (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 flex flex-col items-center gap-1 text-center"
+          >
+            <p className="text-base font-semibold text-foreground">{t("projects.stayTuned")}</p>
+            <p className="text-sm text-muted-foreground">{t("projects.stayTunedSub")}</p>
+          </motion.div>
+        )}
 
         {/* Events subtitle */}
         <motion.h3
@@ -157,15 +171,28 @@ const WorkSection = () => {
               animate="center"
               exit="exit"
               transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="flex flex-col md:flex-row"
+              className="flex flex-col md:flex-row cursor-pointer group"
+              onClick={() => {
+                if (event.link) {
+                  window.open(event.link, '_blank', 'noopener,noreferrer');
+                }
+              }}
             >
-              <div className="relative h-56 w-full md:h-auto md:w-1/2 shrink-0">
+              <div className="relative h-56 w-full md:h-auto md:w-1/2 shrink-0 overflow-hidden">
                 <img
                   src={event.image}
                   alt={translated?.title ?? ""}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                 />
+                {event.link && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors duration-300 group-hover:bg-black/30 flex-col gap-2">
+                    <ExternalLink className="h-6 w-6 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    <span className="text-white text-sm font-semibold opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                      {t("common.viewMore") || "View More"}
+                    </span>
+                  </div>
+                )}
               </div>
               <div className="flex flex-col justify-center p-6 md:p-10 flex-1">
                 <span className="mb-2 text-xs font-medium uppercase tracking-widest text-muted-foreground">
