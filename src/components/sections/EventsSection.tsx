@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from "react";
-import { useI18n } from "@/i18n/I18nContext";
+import { useI18n } from "@/i18n/useI18n.ts";
 import { translations } from "@/i18n/translations";
 import { community } from "@/config/community";
 import { ChevronLeft, ChevronRight } from "lucide-react";

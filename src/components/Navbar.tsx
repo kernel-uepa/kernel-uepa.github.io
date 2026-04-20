@@ -1,6 +1,6 @@
 import { community } from "@/config/community";
 import { useState, useEffect, useCallback } from "react";
-import { useI18n } from "@/i18n/I18nContext";
+import { useI18n } from "@/i18n/useI18n.ts";
 import { localeLabels, type Locale } from "@/i18n/translations";
 import { Globe, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -138,7 +138,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile hamburger */}
-          <button onClick={() => setMobileOpen(true)} className="md:hidden text-foreground p-1" aria-label="Open menu">
+          <button onClick={() => setMobileOpen(true)} className="md:hidden text-foreground p-1" aria-label={t("common.openMenu")}>
             <Menu className="h-6 w-6" />
           </button>
         </div>
@@ -165,7 +165,7 @@ const Navbar = () => {
               <button
                 onClick={() => setMobileOpen(false)}
                 className="self-end mb-8 text-foreground"
-                aria-label="Close menu"
+                aria-label={t("common.closeMenu")}
               >
                 <X className="h-6 w-6" />
               </button>

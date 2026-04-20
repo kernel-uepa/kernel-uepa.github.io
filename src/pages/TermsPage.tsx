@@ -1,4 +1,4 @@
-import { useI18n } from "@/i18n/I18nContext";
+import { useI18n } from "@/i18n/useI18n.ts";
 import { useEffect } from "react";
 import { community } from "@/config/community";
 import { Link } from "react-router-dom";

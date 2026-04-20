@@ -1,4 +1,10 @@
 export const en = {
+  common: {
+    viewMore: "View More",
+    scrollToAbout: "Scroll to about section",
+    openMenu: "Open menu",
+    closeMenu: "Close menu",
+  },
   nav: {
     about: "About",
     members: "Members",
@@ -51,28 +57,9 @@ export const en = {
     title: "Our Events",
     items: [
       {
-        title: "Hackathon 2026",
-        date: "March 15–16, 2026",
-        description:
-          "A 24-hour hackathon where teams build innovative solutions to real-world problems. Open to all skill levels with mentors, workshops, and prizes.",
-      },
-      {
-        title: "AI Workshop Series",
-        date: "February 20, 2026",
-        description:
-          "Hands-on workshop covering machine learning fundamentals, from data preprocessing to model deployment. Bring your laptop and curiosity.",
-      },
-      {
-        title: "Open Source Day",
-        date: "January 25, 2026",
-        description:
-          "A full day dedicated to contributing to open-source projects. First-time contributors welcome — we'll guide you through your first pull request.",
-      },
-      {
-        title: "Tech Talk: Web3 & Beyond",
-        date: "December 10, 2025",
-        description:
-          "Industry speakers discuss the future of decentralized technologies, blockchain development, and what it means for student developers.",
+        title: "First AWS Cloud Club Meeting",
+        date: "16th March, 2026",
+        description: "Our first AWS Cloud Club meeting was a success! We are extremely grateful to everyone who was able to attend and to all the speakers who took the time to share their knowledge. The AWS Cloud Club at UEPA team greatly appreciates your support.",
       },
     ],
   },
@@ -80,17 +67,18 @@ export const en = {
     title: "Our Partners",
     items: [
       {
-        name: "Google",
-        description: "Supporting student developers through programs, tools, and mentorship opportunities.",
+        name: "DevsNorte",
+        description: "Supporting student developers with programs, tools, and mentorship opportunities.",
       },
-      { name: "Microsoft", description: "Providing cloud credits, dev tools, and sponsoring our annual hackathon." },
+      { name: "AWS Cloud Club UEPA",
+        description: "Providing cloud credits, dev tools, and sponsoring our annual hackathon." },
       {
-        name: "Amazon Web Services",
-        description: "Powering our infrastructure with cloud services and training resources.",
+        name: "CaeSoft UEPA",
+        description: "UEPA software council focused on software development, DevOps culture, and open-source projects.",
       },
       {
-        name: "GitLab",
-        description: "Enabling our open-source workflow with premium DevOps tools and CI/CD pipelines.",
+        name: "CAEComp UFPA",
+        description: "Computer engineering student council at UFPA, fostering tech culture and collaboration across Pará's universities.",
       },
     ],
   },
@@ -105,7 +93,7 @@ export const en = {
       {
         question: "How much time commitment is expected?",
         answer:
-          "It's completely flexible. You can attend events, contribute to projects, or just hang out in our Discord — whatever works for your schedule.",
+          "It's completely flexible. You can attend events, contribute to projects, or just hang out in our WhatsApp Community — whatever works for your schedule.",
       },
       {
         question: "What kind of projects do you work on?",
@@ -125,12 +113,12 @@ export const en = {
       {
         question: "How do I get involved in a project?",
         answer:
-          "Join our Discord, check out the #projects channel, and pick something that interests you. Project leads are always happy to onboard new contributors.",
+          "Join our WhatsApp Community, check out the #projects channel, and pick something that interests you. Project leads are always happy to onboard new contributors.",
       },
       {
         question: "Do you host events?",
         answer:
-          "Yes! We regularly host workshops, hackathons, tech talks, and social meetups. Follow us on our socials or check Discord for upcoming events.",
+          "Yes! We regularly host workshops, hackathons, tech talks, and social meetups. Follow us on our socials or check WhatsApp Communityss for upcoming events.",
       },
     ],
   },
@@ -140,9 +128,8 @@ export const en = {
     socials: [
       { name: "Instagram", description: "Behind-the-scenes content, event highlights, and community stories." },
       { name: "LinkedIn", description: "Professional updates, member achievements, and career opportunities." },
-      { name: "X (Twitter)", description: "Quick takes on tech trends, live event threads, and community banter." },
       {
-        name: "Discord",
+        name: "Whatsapp",
         description: "Our main hub — chat with members, join project channels, and get help in real-time.",
       },
       { name: "YouTube", description: "Workshop recordings, tech talks, project demos, and tutorials." },

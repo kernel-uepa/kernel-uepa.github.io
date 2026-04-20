@@ -1,4 +1,10 @@
 export const pt = {
+  common: {
+    viewMore: "Saiba Mais",
+    scrollToAbout: "Rolar para a seção sobre",
+    openMenu: "Abrir menu",
+    closeMenu: "Fechar menu",
+  },
   nav: {
     about: "Sobre",
     members: "Membros",
@@ -51,28 +57,10 @@ export const pt = {
     title: "Nossos Eventos",
     items: [
       {
-        title: "Hackathon 2026",
-        date: "15–16 de Março, 2026",
+        title: "Primeiro Encontro AWS Cloud Club",
+        date: "16 de Março de 2026",
         description:
-          "Um hackathon de 24 horas onde equipes criam soluções inovadoras para problemas do mundo real. Aberto a todos os níveis com mentores, workshops e prêmios.",
-      },
-      {
-        title: "Workshop de IA",
-        date: "20 de Fevereiro, 2026",
-        description:
-          "Workshop prático cobrindo fundamentos de machine learning, desde pré-processamento de dados até deploy de modelos. Traga seu laptop e curiosidade.",
-      },
-      {
-        title: "Dia do Open Source",
-        date: "25 de Janeiro, 2026",
-        description:
-          "Um dia inteiro dedicado a contribuir para projetos open-source. Iniciantes são bem-vindos — vamos guiar você no seu primeiro pull request.",
-      },
-      {
-        title: "Tech Talk: Web3 & Além",
-        date: "10 de Dezembro, 2025",
-        description:
-          "Palestrantes da indústria discutem o futuro das tecnologias descentralizadas, desenvolvimento blockchain e o que isso significa para desenvolvedores estudantes.",
+          "Nosso primeiro encontro da AWS Cloud Club foi um sucesso! Somos muitíssimo gratos a todos que puderam comparecer e a todos os palestrantes que dispuseram do seu tempo para compartilhar seus conhecimentos. A equipe AWS Cloud Club at UEPA agradece grandemente.",
       },
     ],
   },
@@ -80,20 +68,20 @@ export const pt = {
     title: "Nossos Parceiros",
     items: [
       {
-        name: "Google",
+        name: "DevsNorte",
         description: "Apoiando desenvolvedores estudantes com programas, ferramentas e oportunidades de mentoria.",
       },
       {
-        name: "Microsoft",
-        description: "Fornecendo créditos de nuvem, ferramentas de dev e patrocinando nosso hackathon anual.",
+        name: "AWS Cloud Club UEPA",
+        description: "Comunidade dedicada ao domínio da Amazon Web Services e da arquitetura de nuvem moderna. ",
       },
       {
-        name: "Amazon Web Services",
-        description: "Potencializando nossa infraestrutura com serviços cloud e recursos de treinamento.",
+        name: "CaeSoft UEPA",
+        description: "Concelho de software da UEPA focado em desenvolvimento de software, cultura DevOps e projetos open-source.",
       },
       {
-        name: "GitLab",
-        description: "Habilitando nosso fluxo open-source com ferramentas premium de DevOps e pipelines CI/CD.",
+        name: "CAEComp UFPA",
+        description: "Conselho Acadêmico de Engenharia de Computação da UFPA, promovendo atividades acadêmicas, eventos e projetos para estudantes de computação.",
       },
     ],
   },
@@ -108,7 +96,7 @@ export const pt = {
       {
         question: "Quanto tempo preciso dedicar?",
         answer:
-          "É completamente flexível. Você pode participar de eventos, contribuir em projetos ou apenas interagir no nosso Discord — o que funcionar na sua agenda.",
+          "É completamente flexível. Você pode participar de eventos, contribuir em projetos ou apenas interagir na nossa comunidade do Whatsapp — o que funcionar na sua agenda.",
       },
       {
         question: "Que tipo de projetos vocês desenvolvem?",
@@ -128,12 +116,12 @@ export const pt = {
       {
         question: "Como posso me envolver em um projeto?",
         answer:
-          "Entre no nosso Discord, confira o canal #projetos e escolha algo que te interesse. Os líderes de projeto estão sempre dispostos a integrar novos contribuidores.",
+          "Entre na nossa comunidade do Whatsapp, confira o canal #projetos e escolha algo que te interesse. Os líderes de projeto estão sempre dispostos a integrar novos contribuidores.",
       },
       {
         question: "Vocês organizam eventos?",
         answer:
-          "Sim! Organizamos regularmente workshops, hackathons, tech talks e encontros sociais. Siga-nos nas redes sociais ou confira o Discord para os próximos eventos.",
+          "Sim! Organizamos regularmente workshops, hackathons, tech talks e encontros sociais. Siga-nos nas redes sociais ou confira a comunidade do Whatsapp para os próximos eventos.",
       },
     ],
   },
@@ -146,9 +134,8 @@ export const pt = {
         name: "LinkedIn",
         description: "Atualizações profissionais, conquistas de membros e oportunidades de carreira.",
       },
-      { name: "X (Twitter)", description: "Opiniões rápidas sobre tech, threads ao vivo e bate-papo da comunidade." },
       {
-        name: "Discord",
+        name: "Whatsapp",
         description:
           "Nosso hub principal — converse com membros, entre em canais de projeto e tire dúvidas em tempo real.",
       },

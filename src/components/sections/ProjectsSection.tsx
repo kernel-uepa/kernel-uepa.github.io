@@ -1,5 +1,5 @@
 import { community } from "@/config/community";
-import { useI18n } from "@/i18n/I18nContext";
+import { useI18n } from "@/i18n/useI18n.ts";
 import { ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const ProjectsSection = () => {
   const { t } = useI18n();
   const projects = community.projects;
-
+  
   return (
     <section id="projects" className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-5xl">

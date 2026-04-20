@@ -1,21 +1,20 @@
 import { community } from "@/config/community";
-import { useI18n } from "@/i18n/I18nContext";
+import { useI18n } from "@/i18n/useI18n.ts";
 import { translations } from "@/i18n/translations";
 import { useTypewriter } from "@/hooks/useTypewriter";
-import { Instagram, Linkedin, Twitter, MessageCircle, Youtube, Github, ChevronDown } from "lucide-react";
+import { Instagram, Linkedin, MessageCircle, Youtube, Github, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 
 const socialIcons = [
   { key: "instagram", icon: Instagram, href: community.socials.instagram },
   { key: "linkedin", icon: Linkedin, href: community.socials.linkedin },
-  { key: "x", icon: Twitter, href: community.socials.x },
-  { key: "discord", icon: MessageCircle, href: community.socials.discord },
+  { key: "whatsapp", icon: MessageCircle, href: community.socials.whatsapp },
   { key: "youtube", icon: Youtube, href: community.socials.youtube },
   { key: "github", icon: Github, href: community.socials.github },
 ];
 
 const HeroSection = () => {
-  const { locale } = useI18n();
+  const { locale, t } = useI18n();
   const taglines = translations[locale].hero.taglines;
   const typed = useTypewriter(taglines, 50, 25, 2500);
 
@@ -79,7 +78,7 @@ const HeroSection = () => {
           if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
         }}
         className="absolute bottom-10 animate-bounce text-muted-foreground transition-colors hover:text-foreground cursor-pointer"
-        aria-label="Scroll to about section"
+        aria-label={t("common.scrollToAbout")}
       >
         <ChevronDown className="h-6 w-6" />
       </button>

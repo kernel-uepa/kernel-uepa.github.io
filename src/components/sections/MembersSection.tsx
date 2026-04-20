@@ -1,8 +1,8 @@
 import { community } from "@/config/community";
-import { useI18n } from "@/i18n/I18nContext";
+import { useI18n } from "@/i18n/useI18n.ts";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useCountUp } from "@/hooks/useCountUp";
-import { Linkedin, Github } from "lucide-react";
+import { Linkedin, Github, Instagram } from "lucide-react";
 import { motion } from "framer-motion";
 
 const statKeys = ["activeMembers", "projectsShipped", "eventsHeld", "workshops"] as const;
@@ -71,6 +71,11 @@ const MembersSection = () => {
               <h3 className="font-semibold text-foreground">{member.name}</h3>
               <p className="mb-3 text-sm text-muted-foreground">{member.role}</p>
               <div className="flex gap-2">
+                {member.socials.instagram && (
+                  <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-foreground">
+                    <Instagram className="h-4 w-4" />
+                  </a>
+                )}
                 {member.socials.linkedin && (
                   <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-foreground">
                     <Linkedin className="h-4 w-4" />
