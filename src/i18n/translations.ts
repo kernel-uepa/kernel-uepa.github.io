@@ -8,7 +8,7 @@ export type Locale = keyof typeof translations;
 // Flatten keys for type-safe access (dot notation)
 type FlattenKeys<T, Prefix extends string = ""> = T extends object
   ? {
-      [K in keyof T]: T[K] extends readonly any[]
+      [K in keyof T]: T[K] extends readonly unknown[]
         ? `${Prefix}${K & string}`
         : T[K] extends object
         ? FlattenKeys<T[K], `${Prefix}${K & string}.`> | `${Prefix}${K & string}`
