@@ -25,14 +25,14 @@ export const community = {
       { value: "1" },
       { value: "1" },
     ],
-    leadership: [
-      { name: "Jorge Hermes", role: "President", photo: "https://avatars.githubusercontent.com/u/91022739?v=4", socials: { linkedin: "https://www.linkedin.com/in/jhermesn/", github: "https://github.com/jhermesn" } },
-      { name: "João Vitor", role: "Design and Branding Lead", photo: "https://avatars.githubusercontent.com/u/141349338?v=4", socials: { linkedin: "https://www.linkedin.com/in/joaovitor-reis/", github: "https://github.com/jotavedreis" } },
-      { name: "Thaylan Fonseca", role: "Events and Workshops Lead", photo: "https://avatars.githubusercontent.com/u/196565378?v=4", socials: { linkedin: "https://www.linkedin.com/in/thaylanbf1/", github: "https://github.com/thaylanbf1" } },
-      { name: "Ryan Ricardo", role: "Partnership Lead", photo: "https://avatars.githubusercontent.com/u/140509330?v=4", socials: { linkedin: "https://www.linkedin.com/in/theunrealryan/", github: "https://github.com/theunrealryan" } },
-      { name: "Ryan Santana", role: "Community Manager", photo: "/public/photos/foto-ryansantana.jpg", socials: { linkedin: "https://www.linkedin.com/in/ryan-souza-santana-785a09293/", github: "https://github.com/Ryan-S-S" } },
-      { name: "Luis Felipe", role: "Tech Lead", photo: "/public/photos/foto-luisfelipe.jpg", socials: { linkedin: "https://www.linkedin.com/in/luis-mendes-66b245380/", github: "https://github.com/MendesFl" } },
-      { name: "Lucas Rego", role: "Lorem Ipsum", photo: "/public/photos/foto-lucasrego.jpg", socials: { linkedin: "https://www.linkedin.com/in/lucas-rego-conduru-649a5a364/", } },
+    leadership: [ // Coloquei alguns como 'github: ""', pq se colocar com a # fica aparecendo o ícone, aí achei melhor deixar vazio mesmo pq n aparece
+      { name: "Jorge Hermes", role: "President", photo: "https://avatars.githubusercontent.com/u/91022739?v=4", socials: { linkedin: "https://www.linkedin.com/in/jhermesn/", github: "https://github.com/jhermesn", instagram: "https://www.instagram.com/jhermesn.dev/" } },
+      { name: "João Vitor", role: "Design and Branding Lead", photo: "https://avatars.githubusercontent.com/u/141349338?v=4", socials: { linkedin: "https://www.linkedin.com/in/joaovitor-reis/", github: "https://github.com/jotavedreis", instagram: "https://www.instagram.com/jotave_dev/" } },
+      { name: "Thaylan Fonseca", role: "Events and Workshops Lead", photo: "https://avatars.githubusercontent.com/u/196565378?v=4", socials: { linkedin: "https://www.linkedin.com/in/thaylanbf1/", github: "https://github.com/thaylanbf1", instagram: "" } },
+      { name: "Ryan Ricardo", role: "Partnership Lead", photo: "https://avatars.githubusercontent.com/u/140509330?v=4", socials: { linkedin: "https://www.linkedin.com/in/theunrealryan/", github: "https://github.com/theunrealryan", instagram: "" } }, 
+      { name: "Ryan Santana", role: "Community Manager", photo: "/public/photos/foto-ryansantana.jpg", socials: { linkedin: "https://www.linkedin.com/in/ryan-souza-santana-785a09293/", github: "https://github.com/Ryan-S-S", instagram: "" } },
+      { name: "Luis Felipe", role: "Tech Lead", photo: "/public/photos/foto-luisfelipe.jpg", socials: { linkedin: "https://www.linkedin.com/in/luis-mendes-66b245380/", github: "https://github.com/MendesFl", instagram: "" } },
+      { name: "Lucas Rego", role: "Lorem Ipsum", photo: "/public/photos/foto-lucasrego.jpg", socials: { linkedin: "https://www.linkedin.com/in/lucas-rego-conduru-649a5a364/", github: "", instagram: ""} },
     ],
   },
 
